@@ -3,13 +3,13 @@
     <string name="signUP">Sign Up</string>
     <string name="signIn">Sign In</string>
     <string name="password">Password</string>
-    <string name="name">Name</string>
+    <string name="name">Username</string>
     <string name="title1">Saving</string>
     <string name="cash">Amount</string>
     <string name="saving">Save</string>
     <string name="cancelation">Cancel</string>
     <string name="title">LOGIN</string>
     <string name="title2">CREATE ACCOUNT</string>
-    <string name="email">EmailId</string>
+    <string name="email">Email_Id</string>
     <string name="listView">Client Details</string>
 </resources>
