@@ -3,6 +3,9 @@ plugins {
 }
 
 android {
+    buildTypes.each {
+        it.buildConfigField 'String', 'API_TOKEN', ApiToken
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
