@@ -38,7 +38,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View view) {
         if (view == mCreated) {
-            Intent old = new Intent(RegisterActivity.this, AuthenticationActivity.class);
+            Intent old = new Intent(RegisterActivity.this, LoginActivity.class);
             old.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(old);
             finish();

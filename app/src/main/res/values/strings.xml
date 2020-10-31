@@ -12,4 +12,5 @@
     <string name="title2">CREATE ACCOUNT</string>
     <string name="email">Email_Id</string>
     <string name="listView">Client Details</string>
+    <string name="country">Country code</string>
 </resources>

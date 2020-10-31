@@ -36,11 +36,24 @@
             android:text="@string/name" />
 
         <EditText
+            android:id="@+id/countryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/country" />
+
+        <EditText
             android:id="@+id/cash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/username1"
-            android:layout_alignRight="@+id/username1"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/countryName"
+            android:layout_alignEnd="@+id/countryName"
+            android:layout_alignRight="@+id/countryName"
             android:layout_centerVertical="true"
             android:ems="10"
             android:inputType="number"
