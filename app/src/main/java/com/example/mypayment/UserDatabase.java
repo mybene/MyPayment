@@ -53,12 +53,20 @@ public class UserDatabase extends SQLiteOpenHelper {
 
 
     }
-    public List<ClientModel> getAll(){
-        List<ClientModel>returnList= new ArrayList<>();
-
-        String queryString="SELECT * FROM "+USERS_TABLE;
-        SQLiteDatabase db= this.getReadableDatabase();
-
-        return returnList;
     }
-}
+//    public Object getAll(){
+//        List<ClientModel>returnList= new ArrayList<>();
+//
+//        String queryString="SELECT * FROM "+USERS_TABLE;
+//        SQLiteDatabase db= this.getReadableDatabase();
+////        Cursor cursor=db.rawQuery(queryString);
+////        if(cursor.moveToFirst()){
+////            do{
+////
+////            } while()
+////        }
+////        else{
+////
+//return null;
+//
+//    }
