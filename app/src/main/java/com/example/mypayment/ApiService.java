@@ -1,11 +1,17 @@
 package com.example.mypayment;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
 import javax.security.auth.callback.Callback;
 
 import okhttp3.Call;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.Response;
 
 public class ApiService {
     public static void findUserCountry(String countryName, Callback callback) {
@@ -17,7 +23,6 @@ public class ApiService {
         String url = urlBuilder.build().toString();
         Request request = new Request.Builder()
                 .url(url)
-                .header("Authorization", Constants.API_TOKEN)
                 .build();
 
         Call call = client.newCall(request);

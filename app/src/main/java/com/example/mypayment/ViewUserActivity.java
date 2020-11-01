@@ -23,7 +23,7 @@ public class ViewUserActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_user);
 
-        getUserCountry(countryName);
+//        getUserCountry(countryName);
 
         listUser=(ListView)findViewById(R.id.userList);
         display=(TextView)findViewById(R.id.titleDisplay);
@@ -34,22 +34,24 @@ public class ViewUserActivity extends AppCompatActivity {
 
         display.setText(name+" save "+cash+" rwf");
     }
-    private  void getUserCountry(String countryName){
-        final ApiService yelpService = new ApiService();
-            yelpService.findUserCountry(countryName, new Callback() {
-                @Override
-                public void onFailure(Call call, IOException e) {
-                    e.printStackTrace();
-                }
-                @Override
-                public void onResponse(Call call, Response response) throws IOException {
-                    try {
-                        String jsonData = response.body().string();
-                        Log.v(TAG, jsonData);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-    }
+//    private  void getUserCountry(String countryName){
+//        final ApiService yelpService = new ApiService();
+//            ApiService.findUserCountry(countryName, new Callback() {
+//                private static final String TAG = ;
+//
+//                @Override
+//                public void onFailure(Call call, IOException e) {
+//                    e.printStackTrace();
+//                }
+//                @Override
+//                public void onResponse(Call call, Response response) throws IOException {
+//                    try {
+//                        String jsonData = response.body().string();
+//                        Log.v(TAG, jsonData);
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            });
+//    }
 }
